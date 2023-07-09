@@ -1,11 +1,18 @@
-if game.placeid == 4924922222 then
+if game.PlaceId == 4924922222 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Bitch Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Bitch Hub", HidePremium = false, intro = true,introtext = "Bitch Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+
 OrionLib:MakeNotification({
 	Name = "Welcome To Bitch Hub",
 	Content = "Your A Fag",
 	Image = "rbxassetid://139437522",
 	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Server Crash",
+	Icon = "rbxassetid://139437522",
+	PremiumOnly = false
 })
 
 
